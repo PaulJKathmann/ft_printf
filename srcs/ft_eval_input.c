@@ -6,7 +6,7 @@
 /*   By: pkathman <pkathman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:53:01 by pkathman          #+#    #+#             */
-/*   Updated: 2023/05/11 20:08:54 by pkathman         ###   ########.fr       */
+/*   Updated: 2023/05/12 12:49:37 by pkathman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_eval_input(va_list args, const char *format, int pos)
 	else if (format[pos] == 'p')
 		printed_chars = ft_print_pointer(va_arg(args, unsigned long));
 	else if (format[pos] == 'x')
-		printed_chars = ft_print_hexa(va_arg(args, unsigned int), 0);
+		printed_chars = ft_print_hexa((unsigned long)va_arg(args, void *), 0);
 	else if (format[pos] == 'X')
 		printed_chars = ft_print_hexa(va_arg(args, unsigned int), 1);
 	else if (format[pos] == '%')

@@ -6,7 +6,7 @@
 /*   By: pkathman <pkathman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:44:51 by pkathman          #+#    #+#             */
-/*   Updated: 2023/05/11 20:11:11 by pkathman         ###   ########.fr       */
+/*   Updated: 2023/05/12 13:16:26 by pkathman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 
 # include "../libft/libft.h"
 # include <stdarg.h>
-
-
-
+# include <stdint.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_eval_input(va_list args, const char *format, int i);

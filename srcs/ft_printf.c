@@ -6,7 +6,7 @@
 /*   By: pkathman <pkathman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:44:01 by pkathman          #+#    #+#             */
-/*   Updated: 2023/05/11 19:50:35 by pkathman         ###   ########.fr       */
+/*   Updated: 2023/05/12 14:08:10 by pkathman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_printf(const char *format, ...)
 {
-	va_list args;
-	int ret;
-	int i;
+	va_list	args;
+	int		ret;
+	int		i;
 
 	va_start(args, format);
 	i = 0;
